@@ -10,7 +10,7 @@ var ConfirmBattleContainer = React.createClass({
   getInitialState: function(){
     return {
       isLoading: true,
-      playerInfo: [],
+      playersInfo: [],
     }
   },
 
@@ -30,7 +30,7 @@ var ConfirmBattleContainer = React.createClass({
     this.context.router.push({
       pathname: '/results',
       state: {
-        playerInfo: this.state.playersInfo
+        playersInfo: this.state.playersInfo
       }
     })
   },
